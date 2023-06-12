@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f2f5f7;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+.nav-bar img{
+    width: 150px;
+}
+ul li a:hover{
+    color: #40ce95;
+}
+.home-page{
+    display: flex;
+    height: 88vh;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.doctor-img{
+    height: 88vh;
+    background-image: url("/assests/green-circle.png"),url("/assests/orange-circle.png");
+    background-size: 400px;
+    background-position: right 10px bottom 70px, right 5px bottom 30px;
+    background-repeat: no-repeat,no-repeat;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 20px;
+    padding-left: 15vw;
+    position: relative;
+    align-items: first baseline;
+    z-index: 0;
+}
+.home-page-h1{
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.orange-angle{
+    position: absolute;
+    right: 33px;
+    bottom: 25px;
+}
+.left-section button{
+    font-size: 19px;
+    color: white;
+    font-weight: 800;
+    background-color: #40ce95;
+    padding: 12px 30px;
+    border: 1px solid #40ce95;
+    border-radius: 35px;
+}
+.left-section p{
+    font-size: 14px;
+    color: #888;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.left-section button:hover{
+    background-color: #ffff;
+    color: #40ce95;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
+.green-angle{
+    position: absolute;
+    top: -30px;
+    left: 220px;
+}
+.center-image{
+    position: absolute;
+    bottom: 8vh;
+    left: 25vw;
+    z-index: 1;
+    opacity: 0.05;  
+}
+.mouse-image{
+    position: absolute;
+    left: 49.5vw;
+    bottom: 21vh;
+    width: 25px;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: #f2f5f7;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 21px;
+}
+
+.box1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) ,1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) inset;
+}
+.box2-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) ,1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) inset;
+}
+.box3-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) ,1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) inset;
+}
+.human-no{
+    color: #22ac75;
+    font-size: 17px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;   
+}
+.human-identity{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+.about-us h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #22ac75;
+    font-weight: 900;
+}
+.about-us-para{
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+}
+.contact-form{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-content{
+    height: 50vh;
+    width: 20vw;
+    background-color: #f2f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) ,1px 1px 5px 0.2px rgba(0, 0, 0, 0.6) inset;
+    position: relative;
+}
+.contact-form-content form{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+    background-color: #f2f5f7;
+}
+.contact-form-content form label{
+    padding-top: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 800;
+}
+.contact-form-content form input[type="text"]{
+    padding: 5px;
+    padding-left: 7px;
+    background-color: #ffff;
+    border: none;
+    border-radius: 10px;
+}
+.contact-form-content form textarea{
+    padding: 5px;
+    padding-left: 7px;
+    background-color: #ffff;
+    border: none;
+    border-radius: 10px;
+}
+.submit-btn{
+    background-color: #40ce95;
+    color: #ffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #40ce95;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.contact-form-content h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+}
+.submit-btn:hover{
+    background-color: #ffff;
+    color: #40ce95;
+    border: 1px solid #ffff;
+    cursor: pointer;
+}
